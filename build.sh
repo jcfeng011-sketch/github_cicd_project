@@ -16,7 +16,7 @@ python3 --version
 # Run unit tests
 echo ""
 echo "Running unit tests..."
-python3 -m pytest test_calculator.py -v || python3 -m unittest test_calculator.py -v
+python3 -m pytest test.py -v || python3 -m unittest test.py -v
 
 # Run the calculator script
 echo ""
