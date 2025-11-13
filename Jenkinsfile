@@ -28,7 +28,7 @@ pipeline {
         success {
             script {
                 echo "Build succeeded!"
-                withCredentials([string(credentialsId: 'Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vY2YwODJmMTAtODBhMy0xMWYwLWEzMjAtODkzZTUzNWY3NGJm', variable: 'WEBEX_TOKEN'),
+                withCredentials([string(credentialsId: 'NDRmZmQ2NTctNGRkZC00Y2UyLTgwNzYtMGNmZjk3YmZlYzA1Yjk4MTIwNWUtOTQy_P0A1_e58072af-9d57-4b13-abf7-eb3b506c964d', variable: 'WEBEX_TOKEN'),
                                  string(credentialsId: 'Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vY2YwODJmMTAtODBhMy0xMWYwLWEzMjAtODkzZTUzNWY3NGJm', variable: 'WEBEX_ROOM')]) {
                     sh '''
                     curl -X POST https://webexapis.com/v1/messages \
